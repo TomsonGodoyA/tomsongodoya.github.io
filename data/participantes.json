@@ -1,0 +1,49 @@
+{
+  "participantes": [
+    {
+      "id": "Pipe",
+      "nombre": "Pipe",
+      "posicion": "DEF / DEL",
+      "foto": "img/01_pipe.jpg",
+      "color": "#f500e4",
+      "resena": "Defensa o delantero, siempre rinde aunque las piernas no den más. Vidal del pueblo.",
+      "skills": { "Ritmo": 80, "Pases": 80, "Gambeta": 75, "Defensa": 90, "Pegada": 92 }
+    },
+    {
+      "id": "Pelao",
+      "nombre": "Pelao",
+      "posicion": "MC",
+      "foto": "img/02_pelao.jpg",
+      "color": "#00e0ff",
+      "resena": "Cerebro táctico, y pese a su lesión a este tarrito todavía le queda manjar. Marco Antonio Senna de las Compas.",
+      "skills": { "Ritmo": 75, "Pases": 90, "Gambeta": 80, "Defensa": 90, "Pegada": 80 }
+    },
+    {
+      "id": "Nair",
+      "nombre": "Nair",
+      "posicion": "DFC",
+      "foto": "img/03_nair.jpg",
+      "color": "#7c4dff",
+      "resena": "El defensor definitivo, curtido en Vicuña, pero doctorado en Diseño F.C. Nair Luiz 2014.",
+      "skills": { "Ritmo": 84, "Pases": 80, "Gambeta": 70, "Defensa": 98, "Pegada": 90 }
+    },
+    {
+      "id": "Perrouri",
+      "nombre": "Perrouri",
+      "posicion": "MCO",
+      "foto": "img/04_perrouri.jpg",
+      "color": "#ffd24a",
+      "resena": "Jugador impredecible, puede ser Maradona en el 86 o Godoy en el 2026.",
+      "skills": { "Ritmo": 1, "Pases": 99, "Gambeta": 50, "Defensa": 99, "Pegada": 1 }
+    },
+    {
+      "id": "Tomson",
+      "nombre": "Tomson",
+      "posicion": "DEL",
+      "foto": "img/05_tomson.jpg",
+      "color": "#2bd97a",
+      "resena": "Remate débil, decisión lenta, pero mucha entrega. Choupo-Moting si quisiera ser delantero.",
+      "skills": { "Ritmo": 65, "Pases": 75, "Gambeta": 85, "Defensa": 80, "Pegada": 75 }
+    }
+  ]
+}
