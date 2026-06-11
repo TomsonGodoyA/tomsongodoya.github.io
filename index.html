@@ -49,7 +49,14 @@
       <div class="section__head">
         <p class="eyebrow">El que manda</p>
         <h2>Tabla de posiciones</h2>
-        <p class="section__sub">Ordenada por puntos. Desempate: cantidad de marcadores exactos.</p>
+        <p class="section__sub"><em>Sistema elegido para <strong>puntuar</strong></em></p>
+        <ul class="reglas">
+          <li><span class="reglas__pts reglas__pts--4">4 pts</span> <span><strong>Marcador exacto.</strong></span></li>
+          <li><span class="reglas__pts reglas__pts--2">2 pts</span> <span>Acertar solo el <strong>ganador o empate</strong>.</span></li>
+          <li><span class="reglas__pts reglas__pts--1">+1 extra</span> <span>Acertar la <strong>diferencia de goles</strong> exacta <em>(ej. 3-1 y quedó 2-0)</em>.</span></li>
+          <li><span class="reglas__pts reglas__pts--0">0 pts</span> <span>Fallo total.</span></li>
+        </ul>
+        <p class="reglas__nota"><em>Se ordena por puntos. Desempate: cantidad de marcadores exactos.</em></p>
       </div>
       <div class="standings" id="standings" role="region" aria-label="Tabla de posiciones"><!-- JS --></div>
     </section>
