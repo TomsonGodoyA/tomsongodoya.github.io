@@ -384,6 +384,6 @@ document.documentElement.classList.add("js");
     }, { threshold: 0.15 });
     obs.observe(cont);
   };
-  if (document.readyState !== "loading") start();
-  else document.addEventListener("DOMContentLoaded", start);
+  if (document.readyState === "complete") start();
+  else window.addEventListener("load", start);
 })();
