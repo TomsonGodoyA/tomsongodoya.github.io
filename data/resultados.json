@@ -10,8 +10,8 @@
       "local": "Mexico",
       "visitante": "South Africa",
       "sede": "Estadio Azteca, Mexico City",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 2,
+      "golesVisitante": 0
     },
     {
       "id": "M02",
