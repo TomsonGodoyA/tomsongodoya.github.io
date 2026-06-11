@@ -362,18 +362,16 @@ h3 { font-family: "Montserrat", sans-serif; font-weight: 800; }
   filter: blur(16px);
   transition: opacity 1.2s var(--ease), transform 1.2s var(--ease), filter 1.2s var(--ease);
 }
-
+.js .section.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
 .js .section.no-reveal {
   opacity: 1;
   transform: none;
   filter: none;
   transition: none;
-}
-
-.js .section.is-visible {
-  opacity: 1;
-  transform: none;
-  filter: blur(0);
 }
 @media (prefers-reduced-motion: reduce) {
   .js .section { opacity: 1; transform: none; filter: none; transition: none; }
