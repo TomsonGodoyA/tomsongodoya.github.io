@@ -367,12 +367,6 @@ h3 { font-family: "Montserrat", sans-serif; font-weight: 800; }
   transform: none;
   filter: blur(0);
 }
-.js .section.no-reveal {
-  opacity: 1;
-  transform: none;
-  filter: none;
-  transition: none;
-}
 @media (prefers-reduced-motion: reduce) {
   .js .section { opacity: 1; transform: none; filter: none; transition: none; }
 }
