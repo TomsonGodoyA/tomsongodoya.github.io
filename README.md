@@ -1,4 +1,4 @@
-# Polla Mundial 2026 · Las Compas FC
+# Polla Mundial 2026 · Predicciones
 
 Dashboard estático para la polla mundialera entre 5 amigos. Tabla de posiciones,
 perfiles tipo carta FIFA, próximos partidos y gráfico de evolución. Sin backend:
