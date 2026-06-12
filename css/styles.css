@@ -421,3 +421,33 @@ h3 { font-family: "Montserrat", sans-serif; font-weight: 800; }
   .gtab .gtab__opt { display: none; }
   .gtab thead th, .gtab tbody td { padding: 12px 6px; font-size: .84rem; }
 }
+
+/* ===== Menú hamburguesa (mobile) ===== */
+.topnav__toggle { display: none; }
+
+@media (max-width: 760px) {
+  .topnav__toggle {
+    display: flex; flex-direction: column; justify-content: center; gap: 5px;
+    width: 42px; height: 42px; padding: 0 9px; border-radius: 10px;
+    background: var(--surface); border: 1px solid var(--line); cursor: pointer;
+  }
+  .topnav__toggle span {
+    display: block; height: 2px; width: 100%; background: var(--text); border-radius: 2px;
+    transition: transform .25s var(--ease), opacity .2s var(--ease);
+  }
+  .topnav__toggle.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .topnav__toggle.is-open span:nth-child(2) { opacity: 0; }
+  .topnav__toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .topnav__links {
+    position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; gap: 4px; padding: 10px 16px 18px;
+    background: rgba(8,8,15,.94); backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+    transform: translateY(-12px); opacity: 0; pointer-events: none;
+    transition: transform .25s var(--ease), opacity .25s var(--ease);
+  }
+  .topnav__links.is-open { transform: none; opacity: 1; pointer-events: auto; }
+  .topnav__links a { padding: 13px 14px; border-radius: 10px; font-size: 1rem; }
+  .topnav__links a:hover { background: rgba(255,255,255,.06); color: var(--text); }
+}
