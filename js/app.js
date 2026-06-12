@@ -328,6 +328,73 @@ function closeModal() {
   document.body.style.overflow = "";
 }
 
+/* ---------- Grupos: tabla real del Mundial ---------- */
+function computeGrupos(DATA) {
+  const grupos = {};
+  for (const m of DATA.resultados.partidos) {
+    const g = m.grupo;
+    if (!grupos[g]) grupos[g] = {};
+    for (const t of [m.local, m.visitante]) {
+      if (!grupos[g][t]) grupos[g][t] = { equipo: t, pj: 0, g: 0, e: 0, p: 0, gf: 0, gc: 0, dg: 0, pts: 0 };
+    }
+    if (!hasResult(m)) continue;
+    const L = grupos[g][m.local], V = grupos[g][m.visitante];
+    const gl = m.golesLocal, gv = m.golesVisitante;
+    L.pj++; V.pj++; L.gf += gl; L.gc += gv; V.gf += gv; V.gc += gl;
+    if (gl > gv) { L.g++; L.pts += 3; V.p++; }
+    else if (gl < gv) { V.g++; V.pts += 3; L.p++; }
+    else { L.e++; V.e++; L.pts++; V.pts++; }
+  }
+  const out = {};
+  for (const g in grupos) {
+    const arr = Object.values(grupos[g]);
+    arr.forEach((t) => (t.dg = t.gf - t.gc));
+    arr.sort((a, b) => b.pts - a.pts || b.dg - a.dg || b.gf - a.gf || a.equipo.localeCompare(b.equipo));
+    out[g] = arr;
+  }
+  return out;
+}
+
+function renderGrupos(DATA) {
+  const tabsEl = $("#gruposTabs"), tablaEl = $("#gruposTabla");
+  if (!tabsEl || !tablaEl) return;
+  const grupos = computeGrupos(DATA);
+  const letras = Object.keys(grupos).sort();
+  let activo = letras[0];
+
+  const pintar = () => {
+    tabsEl.innerHTML = letras.map((L) =>
+      `<button class="grupos__tab ${L === activo ? "is-active" : ""}" data-g="${L}">${L}</button>`).join("");
+    const filas = grupos[activo];
+    tablaEl.innerHTML = `
+      <table class="gtab">
+        <thead><tr>
+          <th class="gtab__pos">#</th>
+          <th class="gtab__team">Grupo ${activo}</th>
+          <th>PJ</th>
+          <th class="gtab__opt">G</th><th class="gtab__opt">E</th><th class="gtab__opt">P</th>
+          <th class="gtab__opt">GF</th><th class="gtab__opt">GC</th>
+          <th>DG</th><th>Pts</th>
+        </tr></thead>
+        <tbody>
+          ${filas.map((t, i) => `
+            <tr class="${i < 2 ? "gtab__clasifica" : ""}">
+              <td class="gtab__pos">${i + 1}</td>
+              <td class="gtab__team">${t.equipo}</td>
+              <td>${t.pj}</td>
+              <td class="gtab__opt">${t.g}</td><td class="gtab__opt">${t.e}</td><td class="gtab__opt">${t.p}</td>
+              <td class="gtab__opt">${t.gf}</td><td class="gtab__opt">${t.gc}</td>
+              <td>${t.dg > 0 ? "+" : ""}${t.dg}</td>
+              <td class="gtab__pts">${t.pts}</td>
+            </tr>`).join("")}
+        </tbody>
+      </table>`;
+    tabsEl.querySelectorAll(".grupos__tab").forEach((b) =>
+      b.addEventListener("click", () => { activo = b.dataset.g; pintar(); }));
+  };
+  pintar();
+}
+
 /* ---------- Init ---------- */
 async function init() {
   let DATA;
@@ -341,6 +408,7 @@ async function init() {
   renderHero(tabla, DATA);
   renderStandings(tabla);
   renderCards(DATA);
+  renderGrupos(DATA);
   renderFixtures(DATA);
   renderChart(DATA);
 
