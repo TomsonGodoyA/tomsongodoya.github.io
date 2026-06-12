@@ -434,3 +434,21 @@ document.documentElement.classList.add("js");
   else document.addEventListener("DOMContentLoaded", reveal);
 })();
 
+/* ===== Menú hamburguesa (mobile) ===== */
+(function () {
+  const btn = document.querySelector("#navToggle");
+  const menu = document.querySelector("#navLinks");
+  if (!btn || !menu) return;
+  const setOpen = (open) => {
+    menu.classList.toggle("is-open", open);
+    btn.classList.toggle("is-open", open);
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+  };
+  btn.addEventListener("click", () => setOpen(!menu.classList.contains("is-open")));
+  menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
+  document.addEventListener("click", (e) => {
+    if (!menu.contains(e.target) && !btn.contains(e.target)) setOpen(false);
+  });
+})();
+
