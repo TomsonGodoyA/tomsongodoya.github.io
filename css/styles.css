@@ -386,3 +386,38 @@ h3 { font-family: "Montserrat", sans-serif; font-weight: 800; }
 .reglas__pts--0 { background: rgba(255,255,255,.05); color: var(--faint); }
 .reglas__nota { margin: 14px 0 0; font-size: .82rem; color: var(--faint); }
 
+/* ===== Tabla de grupos del Mundial ===== */
+.grupos__tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.grupos__tab {
+  width: 42px; height: 42px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--muted);
+  font-family: "Anton", sans-serif; font-size: 1.05rem;
+  transition: border-color .2s var(--ease), color .2s var(--ease), background .2s var(--ease);
+}
+.grupos__tab:hover { border-color: var(--line-2); color: var(--text); }
+.grupos__tab.is-active {
+  background: var(--grad); color: #fff; border-color: transparent;
+  box-shadow: 0 8px 24px -8px rgba(245,0,228,.5);
+}
+.grupos__tabla { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.gtab { width: 100%; border-collapse: collapse; font-family: "Montserrat", sans-serif; }
+.gtab thead th {
+  font-size: .66rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--faint); padding: 14px 8px; text-align: center; border-bottom: 1px solid var(--line);
+}
+.gtab th.gtab__team { text-align: left; }
+.gtab tbody td {
+  padding: 13px 8px; text-align: center; font-size: .9rem; font-weight: 600;
+  color: var(--muted); font-variant-numeric: tabular-nums; border-bottom: 1px solid var(--line);
+}
+.gtab tbody tr:last-child td { border-bottom: none; }
+.gtab__pos { width: 34px; color: var(--faint); }
+.gtab td.gtab__team { text-align: left; color: var(--text); font-weight: 700; }
+.gtab td.gtab__pts { color: var(--text); font-weight: 800; font-size: 1rem; }
+.gtab__clasifica td { background: linear-gradient(90deg, rgba(43,217,122,.12), transparent 55%); }
+.gtab__clasifica .gtab__pos { color: var(--green); }
+.grupos__nota { margin: 14px 0 0; font-size: .82rem; color: var(--faint); }
+@media (max-width: 600px) {
+  .gtab .gtab__opt { display: none; }
+  .gtab thead th, .gtab tbody td { padding: 12px 6px; font-size: .84rem; }
+}
