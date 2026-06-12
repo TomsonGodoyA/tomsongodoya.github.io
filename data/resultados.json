@@ -21,8 +21,8 @@
       "local": "Korea Republic",
       "visitante": "Czechia",
       "sede": "Estadio Akron, Guadalajara",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 2,
+      "golesVisitante": 1
     },
     {
       "id": "M03",
