@@ -405,6 +405,35 @@ function renderGrupos(DATA) {
   pintar();
 }
 
+/* ---------- Siguiente apuesta: pronósticos del próximo partido ---------- */
+function renderSiguiente(DATA) {
+  const cont = $("#next");
+  if (!cont) return;
+  const prox = [...DATA.resultados.partidos]
+    .filter((m) => !hasResult(m))
+    .sort((a, b) => fechaHora(a) - fechaHora(b))[0];
+  if (!prox) { cont.innerHTML = `<p class="chart__empty">No quedan partidos por jugar en fase de grupos.</p>`; return; }
+
+  const picks = DATA.participantes.participantes.map((p) => {
+    const pr = (DATA.pronosticos.participantes[p.id] || {})[prox.id];
+    const score = pr && pr.golesLocal != null
+      ? `${pr.golesLocal} <em>-</em> ${pr.golesVisitante}` : "—";
+    return `<div class="next__pick">
+        <img src="${p.foto}" alt="${p.nombre}">
+        <span class="next__name">${p.nombre}</span>
+        <span class="next__score">${score}</span>
+      </div>`;
+  }).join("");
+
+  cont.innerHTML = `
+    <div class="next__match">
+      <span class="next__grp">Grupo ${prox.grupo}</span>
+      <div class="next__teams"><span>${prox.local}</span><span class="next__vs">VS</span><span>${prox.visitante}</span></div>
+      <span class="next__date">${prox.fecha} · ${prox.hora || ""}</span>
+    </div>
+    <div class="next__picks">${picks}</div>`;
+}
+
 /* ---------- Init ---------- */
 async function init() {
   let DATA;
@@ -417,6 +446,7 @@ async function init() {
   const tabla = computeStandings(DATA);
   renderHero(tabla, DATA);
   renderStandings(tabla);
+  renderSiguiente(DATA);
   renderCards(DATA);
   renderGrupos(DATA);
   renderFixtures(DATA);
