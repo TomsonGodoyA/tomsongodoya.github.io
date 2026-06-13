@@ -434,6 +434,22 @@ function renderSiguiente(DATA) {
     <div class="next__picks">${picks}</div>`;
 }
 
+/* ---------- Última actualización automática (fecha del último commit) ---------- */
+async function renderLastUpdate(DATA) {
+  const el = $("#lastUpdate");
+  if (!el) return;
+  let cuando = null;
+  try {
+    const res = await fetch("data/resultados.json", { method: "HEAD", cache: "no-store" });
+    const lm = res.headers.get("Last-Modified");
+    if (lm) cuando = new Date(lm);
+  } catch (e) { /* preview o sin servidor: usa el respaldo */ }
+  if (!cuando && DATA.resultados.actualizado) cuando = new Date(DATA.resultados.actualizado + "T12:00:00");
+  el.textContent = cuando
+    ? cuando.toLocaleString("es-CL", { day: "numeric", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit", timeZone: "America/Santiago" })
+    : "—";
+}
+
 /* ---------- Init ---------- */
 async function init() {
   let DATA;
@@ -451,6 +467,7 @@ async function init() {
   renderGrupos(DATA);
   renderFixtures(DATA);
   renderChart(DATA);
+  renderLastUpdate(DATA);
 
   // Modal listeners
   $$("#modal [data-close]").forEach((el) => el.addEventListener("click", closeModal));
