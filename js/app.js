@@ -27,11 +27,12 @@ async function loadData() {
 }
 
 /* ---------- Utilidades ---------- */
-const parseFecha = (f) => {
-  // "Thu, Jun 11" -> Date(2026, 5, 11)
-  const m = String(f).match(/([A-Z][a-z]{2})\s+(\d{1,2})/);
-  if (!m) return new Date(2026, 5, 11);
-  return new Date(2026, MESES[m[1]] ?? 5, +m[2]);
+const fechaHora = (m) => {
+  // fecha + hora ("3:00 PM") -> timestamp, para ordenar cronológicamente
+  const d = parseFecha(m.fecha);
+  const t = String(m.hora || "").match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+  if (t) { let h = (+t[1]) % 12; if (/PM/i.test(t[3])) h += 12; d.setHours(h, +t[2]); }
+  return d.getTime();
 };
 const hasResult = (p) => p.golesLocal != null && p.golesVisitante != null;
 const hasPred = (p) => p && p.golesLocal != null && p.golesVisitante != null;
@@ -270,8 +271,9 @@ let MODAL_STATE = { id: null, filter: "todos", DATA: null };
 
 function buildPredRows(pid, DATA, filter) {
   const picks = DATA.pronosticos.participantes[pid] || {};
-  const rows = [];
-  for (const m of DATA.resultados.partidos) {
+   const rows = [];
+  const partidos = [...DATA.resultados.partidos].sort((a, b) => fechaHora(a) - fechaHora(b));
+  for (const m of partidos) {
     const pred = picks[m.id];
     if (!hasPred(pred)) continue;
     const r = scoreMatch(pred, m);
