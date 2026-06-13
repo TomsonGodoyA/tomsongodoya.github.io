@@ -208,8 +208,8 @@
       "local": "United States",
       "visitante": "Paraguay",
       "sede": "SoFi Stadium, Inglewood",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 4,
+      "golesVisitante": 1
     },
     {
       "id": "M20",
