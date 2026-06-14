@@ -418,7 +418,11 @@ h3 { font-family: "Montserrat", sans-serif; font-weight: 800; }
 }
 .gtab tbody tr:last-child td { border-bottom: none; }
 .gtab__pos { width: 34px; color: var(--faint); }
-.gtab td.gtab__team { text-align: left; color: var(--text); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gtab td.gtab__team { text-align: left; color: var(--text); font-weight: 700; }
+.gteam { display: flex; align-items: center; gap: 9px; }
+.gflag { width: 22px; height: 22px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 1px solid var(--line-2); background: var(--surface-2); }
+.gflag--none { display: inline-block; }
+.gname { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 .gtab td.gtab__pts { color: var(--text); font-weight: 800; font-size: 1rem; }
 .gtab__clasifica td { background: linear-gradient(90deg, rgba(43,217,122,.12), transparent 55%); }
 .gtab__clasifica .gtab__pos { color: var(--green); }
