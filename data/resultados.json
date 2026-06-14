@@ -153,8 +153,8 @@
       "local": "Haiti",
       "visitante": "Scotland",
       "sede": "Gillette Stadium, Foxboro",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 1
     },
     {
       "id": "M15",
