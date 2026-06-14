@@ -340,8 +340,8 @@
       "local": "Netherlands",
       "visitante": "Japan",
       "sede": "AT&T Stadium, Arlington",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 2,
+      "golesVisitante": 2
     },
     {
       "id": "M32",
