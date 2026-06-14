@@ -339,6 +339,25 @@ function closeModal() {
 }
 
 /* ---------- Grupos: tabla real del Mundial ---------- */
+const FLAGS = {
+  "Algeria": "dz", "Argentina": "ar", "Australia": "au", "Austria": "at", "Belgium": "be",
+  "Bosnia and Herzegovina": "ba", "Brazil": "br", "Canada": "ca", "Cape Verde": "cv",
+  "Colombia": "co", "Croatia": "hr", "Curaçao": "cw", "Czechia": "cz", "DR Congo": "cd",
+  "Ecuador": "ec", "Egypt": "eg", "England": "gb-eng", "France": "fr", "Germany": "de",
+  "Ghana": "gh", "Haiti": "ht", "Iran": "ir", "Iraq": "iq", "Ivory Coast": "ci", "Japan": "jp",
+  "Jordan": "jo", "Korea Republic": "kr", "Mexico": "mx", "Morocco": "ma", "Netherlands": "nl",
+  "New Zealand": "nz", "Norway": "no", "Panama": "pa", "Paraguay": "py", "Portugal": "pt",
+  "Qatar": "qa", "Saudi Arabia": "sa", "Scotland": "gb-sct", "Senegal": "sn", "South Africa": "za",
+  "Spain": "es", "Sweden": "se", "Switzerland": "ch", "Tunisia": "tn", "Türkiye": "tr",
+  "United States": "us", "Uruguay": "uy", "Uzbekistan": "uz"
+};
+const flagImg = (team) => {
+  const code = FLAGS[team];
+  return code
+    ? `<img class="gflag" src="https://flagcdn.com/w80/${code}.png" alt="" loading="lazy">`
+    : `<span class="gflag gflag--none"></span>`;
+};
+
 function computeGrupos(DATA) {
   const grupos = {};
   for (const m of DATA.resultados.partidos) {
@@ -390,7 +409,7 @@ function renderGrupos(DATA) {
           ${filas.map((t, i) => `
             <tr class="${i < 2 ? "gtab__clasifica" : ""}">
               <td class="gtab__pos">${i + 1}</td>
-              <td class="gtab__team">${t.equipo}</td>
+              <td class="gtab__team"><div class="gteam">${flagImg(t.equipo)}<span class="gname">${t.equipo}</span></div></td>
               <td>${t.pj}</td>
               <td class="gtab__opt">${t.g}</td><td class="gtab__opt">${t.e}</td><td class="gtab__opt">${t.p}</td>
               <td class="gtab__opt">${t.gf}</td><td class="gtab__opt">${t.gc}</td>
