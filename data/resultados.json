@@ -274,8 +274,8 @@
       "local": "Germany",
       "visitante": "Curaçao",
       "sede": "NRG Stadium, Houston",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 7,
+      "golesVisitante": 1
     },
     {
       "id": "M26",
