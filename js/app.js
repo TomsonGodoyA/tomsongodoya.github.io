@@ -54,8 +54,9 @@ function scoreMatch(pred, real) {
     return { pts: 4, tipo: "exacto" };
   // Acertó ganador/empate
   if (sign(pred.golesLocal, pred.golesVisitante) === sign(real.golesLocal, real.golesVisitante)) {
+    const esEmpate = real.golesLocal === real.golesVisitante;
     const difOk = (pred.golesLocal - pred.golesVisitante) === (real.golesLocal - real.golesVisitante);
-    return difOk ? { pts: 3, tipo: "acierto" } : { pts: 2, tipo: "acierto" };
+    return (difOk && !esEmpate) ? { pts: 3, tipo: "acierto" } : { pts: 2, tipo: "acierto" };
   }
   return { pts: 0, tipo: "fallo" };
 }
