@@ -219,8 +219,8 @@
       "local": "Australia",
       "visitante": "Türkiye",
       "sede": "BC Place, Vancouver",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 2,
+      "golesVisitante": 0
     },
     {
       "id": "M21",
