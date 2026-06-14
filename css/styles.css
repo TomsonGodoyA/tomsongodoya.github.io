@@ -400,7 +400,13 @@ h3 { font-family: "Montserrat", sans-serif; font-weight: 800; }
   box-shadow: 0 8px 24px -8px rgba(245,0,228,.5);
 }
 .grupos__tabla { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
-.gtab { width: 100%; border-collapse: collapse; font-family: "Montserrat", sans-serif; }
+.gtab { width: 100%; border-collapse: collapse; table-layout: fixed; font-family: "Montserrat", sans-serif; }
+.gtab thead th:nth-child(1) { width: 34px; }
+.gtab thead th:nth-child(3) { width: 40px; }
+.gtab thead th:nth-child(4), .gtab thead th:nth-child(5), .gtab thead th:nth-child(6) { width: 34px; }
+.gtab thead th:nth-child(7), .gtab thead th:nth-child(8) { width: 40px; }
+.gtab thead th:nth-child(9) { width: 44px; }
+.gtab thead th:nth-child(10) { width: 48px; }
 .gtab thead th {
   font-size: .66rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
   color: var(--faint); padding: 14px 8px; text-align: center; border-bottom: 1px solid var(--line);
@@ -412,7 +418,7 @@ h3 { font-family: "Montserrat", sans-serif; font-weight: 800; }
 }
 .gtab tbody tr:last-child td { border-bottom: none; }
 .gtab__pos { width: 34px; color: var(--faint); }
-.gtab td.gtab__team { text-align: left; color: var(--text); font-weight: 700; }
+.gtab td.gtab__team { text-align: left; color: var(--text); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .gtab td.gtab__pts { color: var(--text); font-weight: 800; font-size: 1rem; }
 .gtab__clasifica td { background: linear-gradient(90deg, rgba(43,217,122,.12), transparent 55%); }
 .gtab__clasifica .gtab__pos { color: var(--green); }
