@@ -3,9 +3,9 @@
     {
       "id": "Pipe",
       "nombre": "Pipe",
-      "posicion": "DEF / DEL",
+      "posicion": "VOL",
       "foto": "img/01_pipe.jpg",
-      "color": "#f500e4",
+      "color": "#ffffff",
       "resena": "Defensa o delantero, siempre rinde aunque las piernas no den más. Vidal del pueblo.",
       "skills": { "Ritmo": 80, "Pases": 80, "Gambeta": 75, "Defensa": 90, "Pegada": 92 }
     },
@@ -39,11 +39,11 @@
     {
       "id": "Tomson",
       "nombre": "Tomson",
-      "posicion": "DEL",
+      "posicion": "LAT",
       "foto": "img/05_tomson.jpg",
       "color": "#2bd97a",
       "resena": "Remate débil, decisión lenta, pero mucha entrega. Choupo-Moting si quisiera ser delantero.",
-      "skills": { "Ritmo": 65, "Pases": 75, "Gambeta": 85, "Defensa": 80, "Pegada": 75 }
+      "skills": { "Ritmo": 72, "Pases": 75, "Gambeta": 85, "Defensa": 80, "Pegada": 75 }
     }
   ]
 }
