@@ -359,6 +359,13 @@ const flagImg = (team) => {
     : `<span class="gflag gflag--none"></span>`;
 };
 
+const flagBig = (team) => {
+  const code = FLAGS[team];
+  return code
+    ? `<img class="next__flag" src="https://flagcdn.com/w160/${code}.png" alt="">`
+    : `<span class="next__flag next__flag--none"></span>`;
+};
+
 function computeGrupos(DATA) {
   const grupos = {};
   for (const m of DATA.resultados.partidos) {
@@ -448,7 +455,7 @@ function renderSiguiente(DATA) {
   cont.innerHTML = `
     <div class="next__match">
       <span class="next__grp">Grupo ${prox.grupo}</span>
-      <div class="next__teams"><span>${prox.local}</span><span class="next__vs">VS</span><span>${prox.visitante}</span></div>
+      <div class="next__teams">${flagBig(prox.local)}<span>${prox.local}</span><span class="next__vs">VS</span><span>${prox.visitante}</span>${flagBig(prox.visitante)}</div>
       <span class="next__date">${prox.fecha} · ${prox.hora || ""}</span>
     </div>
     <div class="next__picks">${picks}</div>`;
