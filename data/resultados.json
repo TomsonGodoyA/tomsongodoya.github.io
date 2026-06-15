@@ -472,8 +472,8 @@
       "local": "Spain",
       "visitante": "Cape Verde",
       "sede": "Mercedes-Benz Stadium, Atlanta",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 0
     },
     {
       "id": "M44",
