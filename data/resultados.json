@@ -351,8 +351,8 @@
       "local": "Sweden",
       "visitante": "Tunisia",
       "sede": "Estadio BBVA, Monterrey",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 5,
+      "golesVisitante": 1
     },
     {
       "id": "M33",
