@@ -538,8 +538,8 @@
       "local": "France",
       "visitante": "Senegal",
       "sede": "MetLife Stadium, East Rutherford",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 3,
+      "golesVisitante": 1
     },
     {
       "id": "M50",
