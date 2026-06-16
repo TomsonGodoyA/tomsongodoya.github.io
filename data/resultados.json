@@ -417,8 +417,8 @@
       "local": "Iran",
       "visitante": "New Zealand",
       "sede": "SoFi Stadium, Inglewood",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 2,
+      "golesVisitante": 2
     },
     {
       "id": "M39",
