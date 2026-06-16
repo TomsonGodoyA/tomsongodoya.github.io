@@ -483,8 +483,8 @@
       "local": "Saudi Arabia",
       "visitante": "Uruguay",
       "sede": "Hard Rock Stadium, Miami",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 1,
+      "golesVisitante": 1
     },
     {
       "id": "M45",
