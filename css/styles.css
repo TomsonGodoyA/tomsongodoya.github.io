@@ -250,7 +250,7 @@ h3 { font-family: "Montserrat", sans-serif; font-weight: 800; }
 .fx__date { font-family:"Montserrat"; font-weight:600; font-size:.74rem; color: var(--muted); }
 .fx__teams { display:flex; flex-direction:column; gap:6px; }
 .fx__team { display:flex; align-items:center; gap:9px; font-family:"Montserrat"; font-weight:700; font-size:1rem; }
-.fx__vs { font-family:"Anton"; font-size:.8rem; color: var(--faint); padding-left: 2px; }
+.fx__vs { font-family:"Anton"; font-size:.8rem; color: var(--faint); padding-left: 31px; }
 .fx__venue { margin-top:12px; font-size:.74rem; color: var(--faint); display:flex; align-items:center; gap:6px; }
 
 /* =================================================================
