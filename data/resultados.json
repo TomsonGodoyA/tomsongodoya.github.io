@@ -604,8 +604,8 @@
       "local": "Argentina",
       "visitante": "Algeria",
       "sede": "Arrowhead Stadium, Kansas City",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 3,
+      "golesVisitante": 0
     },
     {
       "id": "M56",
