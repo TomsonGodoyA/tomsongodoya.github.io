@@ -736,8 +736,8 @@
       "local": "England",
       "visitante": "Croatia",
       "sede": "AT&T Stadium, Arlington",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 4,
+      "golesVisitante": 2
     },
     {
       "id": "M68",
