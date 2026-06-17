@@ -185,9 +185,9 @@ function renderFixtures(DATA) {
         <span class="fx__date">${p.fecha} · ${p.hora || ""}</span>
       </div>
       <div class="fx__teams">
-        <span class="fx__team">${p.local}</span>
+        <span class="fx__team">${flagImg(p.local)}${p.local}</span>
         <span class="fx__vs">VS</span>
-        <span class="fx__team">${p.visitante}</span>
+        <span class="fx__team">${flagImg(p.visitante)}${p.visitante}</span>
       </div>
       <p class="fx__venue">📍 ${p.sede || ""}</p>
     </article>`).join("");
