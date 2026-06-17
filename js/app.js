@@ -461,6 +461,38 @@ function renderSiguiente(DATA) {
     <div class="next__picks">${picks}</div>`;
 }
 
+function renderAnterior(DATA) {
+  const cont = $("#prev");
+  if (!cont) return;
+  const ant = [...DATA.resultados.partidos]
+    .filter((m) => hasResult(m))
+    .sort((a, b) => fechaHora(b) - fechaHora(a))[0];
+  if (!ant) { cont.innerHTML = `<p class="chart__empty">Aún no hay partidos jugados.</p>`; return; }
+
+  const picks = DATA.participantes.participantes.map((p) => {
+    const pr = (DATA.pronosticos.participantes[p.id] || {})[ant.id];
+    const sc = pr && pr.golesLocal != null
+      ? `${pr.golesLocal} <em>-</em> ${pr.golesVisitante}` : "—";
+    const res = scoreMatch(pr, ant);
+    const pts = res ? res.pts : 0;
+    const tipo = res ? res.tipo : "fallo";
+    return `<div class="next__pick">
+        <img src="${p.foto}" alt="${p.nombre}">
+        <span class="next__name">${p.nombre}</span>
+        <span class="next__score">${sc}</span>
+        <span class="next__pts next__pts--${tipo}">+${pts}</span>
+      </div>`;
+  }).join("");
+
+  cont.innerHTML = `
+    <div class="next__match next__match--done">
+      <span class="next__grp">Grupo ${ant.grupo} · Finalizado</span>
+      <div class="next__teams">${flagBig(ant.local)}<span>${ant.local}</span><span class="prev__result">${ant.golesLocal} <em>-</em> ${ant.golesVisitante}</span><span>${ant.visitante}</span>${flagBig(ant.visitante)}</div>
+      <span class="next__date">${ant.fecha} · ${ant.hora || ""}</span>
+    </div>
+    <div class="next__picks">${picks}</div>`;
+}
+
 /* ---------- Última actualización automática (fecha del último commit) ---------- */
 async function renderLastUpdate(DATA) {
   const el = $("#lastUpdate");
@@ -490,6 +522,7 @@ async function init() {
   renderHero(tabla, DATA);
   renderStandings(tabla);
   renderSiguiente(DATA);
+  renderAnterior(DATA);
   renderCards(DATA);
   renderGrupos(DATA);
   renderFixtures(DATA);
