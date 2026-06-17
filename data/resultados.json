@@ -615,8 +615,8 @@
       "local": "Austria",
       "visitante": "Jordan",
       "sede": "Levi’s Stadium, Santa Clara",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 3,
+      "golesVisitante": 1
     },
     {
       "id": "M57",
