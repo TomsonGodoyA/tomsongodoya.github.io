@@ -32,8 +32,8 @@
       "local": "Czechia",
       "visitante": "South Africa",
       "sede": "Mercedes-Benz Stadium, Atlanta",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 1,
+      "golesVisitante": 1
     },
     {
       "id": "M04",
