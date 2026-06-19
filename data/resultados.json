@@ -109,8 +109,8 @@
       "local": "Canada",
       "visitante": "Qatar",
       "sede": "BC Place, Vancouver",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 6,
+      "golesVisitante": 0
     },
     {
       "id": "M11",
