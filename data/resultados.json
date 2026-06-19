@@ -230,8 +230,8 @@
       "local": "United States",
       "visitante": "Australia",
       "sede": "Lumen Field, Seattle",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 2,
+      "golesVisitante": 0
     },
     {
       "id": "M22",
