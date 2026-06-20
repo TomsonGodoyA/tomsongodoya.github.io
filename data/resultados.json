@@ -362,8 +362,8 @@
       "local": "Netherlands",
       "visitante": "Sweden",
       "sede": "NRG Stadium, Houston",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 5,
+      "golesVisitante": 1
     },
     {
       "id": "M34",
