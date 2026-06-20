@@ -175,8 +175,8 @@
       "local": "Brazil",
       "visitante": "Haiti",
       "sede": "Lincoln Financial Field, Philadelphia",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 3,
+      "golesVisitante": 0
     },
     {
       "id": "M17",
