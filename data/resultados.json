@@ -241,8 +241,8 @@
       "local": "Türkiye",
       "visitante": "Paraguay",
       "sede": "Levi’s Stadium, Santa Clara",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 1
     },
     {
       "id": "M23",
