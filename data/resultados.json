@@ -296,8 +296,8 @@
       "local": "Germany",
       "visitante": "Ivory Coast",
       "sede": "BMO Field, Toronto",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 2,
+      "golesVisitante": 1
     },
     {
       "id": "M28",
