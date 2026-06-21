@@ -307,8 +307,8 @@
       "local": "Ecuador",
       "visitante": "Curaçao",
       "sede": "Arrowhead Stadium, Kansas City",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 0
     },
     {
       "id": "M29",
