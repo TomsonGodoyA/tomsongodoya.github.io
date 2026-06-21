@@ -428,8 +428,8 @@
       "local": "Belgium",
       "visitante": "Iran",
       "sede": "SoFi Stadium, Inglewood",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 0
     },
     {
       "id": "M40",
