@@ -373,8 +373,8 @@
       "local": "Tunisia",
       "visitante": "Japan",
       "sede": "Estadio BBVA, Monterrey",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 4
     },
     {
       "id": "M35",
