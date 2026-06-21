@@ -494,8 +494,8 @@
       "local": "Spain",
       "visitante": "Saudi Arabia",
       "sede": "Mercedes-Benz Stadium, Atlanta",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 4,
+      "golesVisitante": 0
     },
     {
       "id": "M46",
