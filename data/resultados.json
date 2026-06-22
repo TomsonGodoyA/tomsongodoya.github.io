@@ -626,8 +626,8 @@
       "local": "Argentina",
       "visitante": "Austria",
       "sede": "AT&T Stadium, Arlington",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 2,
+      "golesVisitante": 0
     },
     {
       "id": "M58",
