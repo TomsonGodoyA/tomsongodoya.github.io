@@ -692,8 +692,8 @@
       "local": "Portugal",
       "visitante": "Uzbekistan",
       "sede": "NRG Stadium, Houston",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 5,
+      "golesVisitante": 0
     },
     {
       "id": "M64",
