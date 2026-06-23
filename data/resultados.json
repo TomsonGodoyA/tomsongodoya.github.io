@@ -571,8 +571,8 @@
       "local": "Norway",
       "visitante": "Senegal",
       "sede": "MetLife Stadium, East Rutherford",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 3,
+      "golesVisitante": 2
     },
     {
       "id": "M53",
