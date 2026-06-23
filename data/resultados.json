@@ -758,8 +758,8 @@
       "local": "England",
       "visitante": "Ghana",
       "sede": "Gillette Stadium, Foxborough",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 0
     },
     {
       "id": "M70",
