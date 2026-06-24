@@ -769,8 +769,8 @@
       "local": "Panama",
       "visitante": "Croatia",
       "sede": "BMO Field, Toronto",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 1
     },
     {
       "id": "M71",
