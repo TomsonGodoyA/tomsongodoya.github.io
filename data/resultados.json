@@ -703,8 +703,8 @@
       "local": "Colombia",
       "visitante": "DR Congo",
       "sede": "Estadio Akron, Guadalajara",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 1,
+      "golesVisitante": 0
     },
     {
       "id": "M65",
