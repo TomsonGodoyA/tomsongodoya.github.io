@@ -120,8 +120,8 @@
       "local": "Switzerland",
       "visitante": "Canada",
       "sede": "BC Place, Vancouver",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 2,
+      "golesVisitante": 1
     },
     {
       "id": "M12",
@@ -131,8 +131,8 @@
       "local": "Bosnia and Herzegovina",
       "visitante": "Qatar",
       "sede": "Lumen Field, Seattle",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 3,
+      "golesVisitante": 1
     },
     {
       "id": "M13",
