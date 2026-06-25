@@ -318,8 +318,8 @@
       "local": "Curaçao",
       "visitante": "Ivory Coast",
       "sede": "Lincoln Financial Field, Philadelphia",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 2
     },
     {
       "id": "M30",
@@ -329,8 +329,8 @@
       "local": "Ecuador",
       "visitante": "Germany",
       "sede": "MetLife Stadium, East Rutherford",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 2,
+      "golesVisitante": 1
     },
     {
       "id": "M31",
