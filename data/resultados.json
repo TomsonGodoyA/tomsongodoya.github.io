@@ -54,8 +54,8 @@
       "local": "Czechia",
       "visitante": "Mexico",
       "sede": "Estadio Azteca, Mexico City",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 3
     },
     {
       "id": "M06",
@@ -65,8 +65,8 @@
       "local": "South Africa",
       "visitante": "Korea Republic",
       "sede": "Estadio BBVA, Monterrey",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 1,
+      "golesVisitante": 0
     },
     {
       "id": "M07",
