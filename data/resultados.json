@@ -384,8 +384,8 @@
       "local": "Japan",
       "visitante": "Sweden",
       "sede": "AT&T Stadium, Arlington",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 1,
+      "golesVisitante": 1
     },
     {
       "id": "M36",
@@ -395,8 +395,8 @@
       "local": "Tunisia",
       "visitante": "Netherlands",
       "sede": "Arrowhead Stadium, Kansas City",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 1,
+      "golesVisitante": 3
     },
     {
       "id": "M37",
