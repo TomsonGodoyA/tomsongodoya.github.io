@@ -252,8 +252,8 @@
       "local": "Türkiye",
       "visitante": "United States",
       "sede": "SoFi Stadium, Inglewood",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 3,
+      "golesVisitante": 2
     },
     {
       "id": "M24",
@@ -263,8 +263,8 @@
       "local": "Paraguay",
       "visitante": "Australia",
       "sede": "Levi’s Stadium, Santa Clara",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 0
     },
     {
       "id": "M25",
