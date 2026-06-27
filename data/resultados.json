@@ -516,8 +516,8 @@
       "local": "Cape Verde",
       "visitante": "Saudi Arabia",
       "sede": "NRG Stadium, Houston",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 0
     },
     {
       "id": "M48",
@@ -527,8 +527,8 @@
       "local": "Uruguay",
       "visitante": "Spain",
       "sede": "Estadio Akron, Guadalajara",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 1
     },
     {
       "id": "M49",
