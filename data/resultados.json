@@ -780,8 +780,8 @@
       "local": "Panama",
       "visitante": "England",
       "sede": "MetLife Stadium, East Rutherford",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 2
     },
     {
       "id": "M72",
@@ -791,8 +791,8 @@
       "local": "Croatia",
       "visitante": "Ghana",
       "sede": "Lincoln Financial Field, Philadelphia",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 2,
+      "golesVisitante": 1
     }
   ]
 }
