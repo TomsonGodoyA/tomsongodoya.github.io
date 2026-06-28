@@ -648,8 +648,8 @@
       "local": "Jordan",
       "visitante": "Argentina",
       "sede": "AT&T Stadium, Arlington",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 1,
+      "golesVisitante": 3
     },
     {
       "id": "M60",
@@ -659,8 +659,8 @@
       "local": "Algeria",
       "visitante": "Austria",
       "sede": "Arrowhead Stadium, Kansas City",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 3,
+      "golesVisitante": 3
     },
     {
       "id": "M61",
