@@ -714,8 +714,8 @@
       "local": "Colombia",
       "visitante": "Portugal",
       "sede": "Hard Rock Stadium, Miami",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 0,
+      "golesVisitante": 0
     },
     {
       "id": "M66",
@@ -725,8 +725,8 @@
       "local": "DR Congo",
       "visitante": "Uzbekistan",
       "sede": "Mercedes-Benz Stadium, Atlanta",
-      "golesLocal": null,
-      "golesVisitante": null
+      "golesLocal": 3,
+      "golesVisitante": 1
     },
     {
       "id": "M67",
