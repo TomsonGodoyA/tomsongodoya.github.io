@@ -804,10 +804,10 @@
       "hora": "4:30 PM",
       "local": "Germany",
       "visitante": "Paraguay",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
-      "definicion": null
+      "golesLocal": 1,
+      "golesVisitante": 1,
+      "avanza": "Paraguay",
+      "definicion": "penales"
     },
     {
       "id": "16vos-2",
