@@ -924,9 +924,9 @@
       "hora": "1:00 PM",
       "local": "Brazil",
       "visitante": "Japan",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 2,
+      "golesVisitante": 1,
+      "avanza": "Brazil",
       "definicion": null
     },
     {
