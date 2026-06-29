@@ -209,15 +209,18 @@ function renderCards(DATA) {
 /* ---------- Render: próximos partidos ---------- */
 function renderFixtures(DATA) {
   const prox = DATA.resultados.partidos
-    .filter((p) => p.grupo && !hasResult(p))
-    .sort((a, b) => parseFecha(a.fecha) - parseFecha(b.fecha))
+    .filter((p) => !hasResult(p) && p.local && p.visitante)
+    .sort((a, b) => fechaHora(a) - fechaHora(b))
     .slice(0, 8);
   const cont = $("#fixtures");
-  if (!prox.length) { cont.innerHTML = `<p class="chart__empty">No quedan partidos por jugar en fase de grupos.</p>`; return; }
-  cont.innerHTML = prox.map((p) => `
+  if (!prox.length) { cont.innerHTML = `<p class="chart__empty">No quedan partidos por jugar.</p>`; return; }
+  cont.innerHTML = prox.map((p) => {
+    const etiqueta = p.grupo ? `Grupo ${p.grupo}` : (p.llave || "Eliminación");
+    const venue = p.sede ? `<p class="fx__venue">📍 ${p.sede}</p>` : "";
+    return `
     <article class="fx">
       <div class="fx__top">
-        <span class="fx__grp">Grupo ${p.grupo}</span>
+        <span class="fx__grp">${etiqueta}</span>
         <span class="fx__date">${p.fecha} · ${p.hora || ""}</span>
       </div>
       <div class="fx__teams">
@@ -225,8 +228,9 @@ function renderFixtures(DATA) {
         <span class="fx__vs">VS</span>
         <span class="fx__team">${flagImg(p.visitante)}${p.visitante}</span>
       </div>
-      <p class="fx__venue">📍 ${p.sede || ""}</p>
-    </article>`).join("");
+      ${venue}
+    </article>`;
+  }).join("");
 }
 
 /* ---------- Render: gráfico de evolución ---------- */
