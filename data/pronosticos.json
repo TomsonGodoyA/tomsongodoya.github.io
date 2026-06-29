@@ -288,6 +288,86 @@
       "M72": {
         "golesLocal": 3,
         "golesVisitante": 1
+      },
+      "16vos-1": {
+        "golesLocal": 3,
+        "golesVisitante": 0,
+        "avanza": "Germany"
+      },
+      "16vos-2": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "France"
+      },
+      "16vos-3": {
+        "golesLocal": 0,
+        "golesVisitante": 1,
+        "avanza": "Canada"
+      },
+      "16vos-4": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Netherlands"
+      },
+      "16vos-5": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Croatia"
+      },
+      "16vos-6": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Spain"
+      },
+      "16vos-7": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "United States"
+      },
+      "16vos-8": {
+        "golesLocal": 2,
+        "golesVisitante": 2,
+        "avanza": "Belgium"
+      },
+      "16vos-9": {
+        "golesLocal": 3,
+        "golesVisitante": 0,
+        "avanza": "Brazil"
+      },
+      "16vos-10": {
+        "golesLocal": 1,
+        "golesVisitante": 0,
+        "avanza": "Ivory Coast"
+      },
+      "16vos-11": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Ecuador"
+      },
+      "16vos-12": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "England"
+      },
+      "16vos-13": {
+        "golesLocal": 3,
+        "golesVisitante": 1,
+        "avanza": "Argentina"
+      },
+      "16vos-14": {
+        "golesLocal": 0,
+        "golesVisitante": 1,
+        "avanza": "Egypt"
+      },
+      "16vos-15": {
+        "golesLocal": 0,
+        "golesVisitante": 0,
+        "avanza": "Algeria"
+      },
+      "16vos-16": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Ghana"
       }
     },
     "Pelao": {
@@ -578,6 +658,86 @@
       "M72": {
         "golesLocal": 2,
         "golesVisitante": 3
+      },
+      "16vos-1": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Germany"
+      },
+      "16vos-2": {
+        "golesLocal": 3,
+        "golesVisitante": 0,
+        "avanza": "France"
+      },
+      "16vos-3": {
+        "golesLocal": 0,
+        "golesVisitante": 1,
+        "avanza": "Canada"
+      },
+      "16vos-4": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Netherlands"
+      },
+      "16vos-5": {
+        "golesLocal": 0,
+        "golesVisitante": 0,
+        "avanza": "Portugal"
+      },
+      "16vos-6": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Spain"
+      },
+      "16vos-7": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "United States"
+      },
+      "16vos-8": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Senegal"
+      },
+      "16vos-9": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Brazil"
+      },
+      "16vos-10": {
+        "golesLocal": 0,
+        "golesVisitante": 0,
+        "avanza": "Ivory Coast"
+      },
+      "16vos-11": {
+        "golesLocal": 1,
+        "golesVisitante": 0,
+        "avanza": "Mexico"
+      },
+      "16vos-12": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "England"
+      },
+      "16vos-13": {
+        "golesLocal": 3,
+        "golesVisitante": 0,
+        "avanza": "Argentina"
+      },
+      "16vos-14": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Egypt"
+      },
+      "16vos-15": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Switzerland"
+      },
+      "16vos-16": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Colombia"
       }
     },
     "Perrouri": {
@@ -868,6 +1028,86 @@
       "M72": {
         "golesLocal": 2,
         "golesVisitante": 0
+      },
+      "16vos-1": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Germany"
+      },
+      "16vos-2": {
+        "golesLocal": 3,
+        "golesVisitante": 1,
+        "avanza": "France"
+      },
+      "16vos-3": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Canada"
+      },
+      "16vos-4": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Netherlands"
+      },
+      "16vos-5": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "Croatia"
+      },
+      "16vos-6": {
+        "golesLocal": 1,
+        "golesVisitante": 0,
+        "avanza": "Spain"
+      },
+      "16vos-7": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "United States"
+      },
+      "16vos-8": {
+        "golesLocal": 2,
+        "golesVisitante": 2,
+        "avanza": "Senegal"
+      },
+      "16vos-9": {
+        "golesLocal": 3,
+        "golesVisitante": 1,
+        "avanza": "Brazil"
+      },
+      "16vos-10": {
+        "golesLocal": 0,
+        "golesVisitante": 1,
+        "avanza": "Norway"
+      },
+      "16vos-11": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Mexico"
+      },
+      "16vos-12": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "England"
+      },
+      "16vos-13": {
+        "golesLocal": 3,
+        "golesVisitante": 0,
+        "avanza": "Argentina"
+      },
+      "16vos-14": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Australia"
+      },
+      "16vos-15": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Switzerland"
+      },
+      "16vos-16": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "Ghana"
       }
     },
     "Pipe": {
@@ -1158,6 +1398,86 @@
       "M72": {
         "golesLocal": 1,
         "golesVisitante": 1
+      },
+      "16vos-1": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Germany"
+      },
+      "16vos-2": {
+        "golesLocal": 3,
+        "golesVisitante": 0,
+        "avanza": "France"
+      },
+      "16vos-3": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "Canada"
+      },
+      "16vos-4": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Netherlands"
+      },
+      "16vos-5": {
+        "golesLocal": 2,
+        "golesVisitante": 2,
+        "avanza": "Portugal"
+      },
+      "16vos-6": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Spain"
+      },
+      "16vos-7": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "United States"
+      },
+      "16vos-8": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Senegal"
+      },
+      "16vos-9": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Brazil"
+      },
+      "16vos-10": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "Norway"
+      },
+      "16vos-11": {
+        "golesLocal": 0,
+        "golesVisitante": 0,
+        "avanza": "Mexico"
+      },
+      "16vos-12": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "England"
+      },
+      "16vos-13": {
+        "golesLocal": 3,
+        "golesVisitante": 0,
+        "avanza": "Argentina"
+      },
+      "16vos-14": {
+        "golesLocal": 0,
+        "golesVisitante": 1,
+        "avanza": "Egypt"
+      },
+      "16vos-15": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Algeria"
+      },
+      "16vos-16": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Colombia"
       }
     },
     "Tomson": {
@@ -1448,6 +1768,86 @@
       "M72": {
         "golesLocal": 1,
         "golesVisitante": 2
+      },
+      "16vos-1": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Germany"
+      },
+      "16vos-2": {
+        "golesLocal": 3,
+        "golesVisitante": 0,
+        "avanza": "France"
+      },
+      "16vos-3": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "Canada"
+      },
+      "16vos-4": {
+        "golesLocal": 2,
+        "golesVisitante": 2,
+        "avanza": "Netherlands"
+      },
+      "16vos-5": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Croatia"
+      },
+      "16vos-6": {
+        "golesLocal": 1,
+        "golesVisitante": 0,
+        "avanza": "Spain"
+      },
+      "16vos-7": {
+        "golesLocal": 3,
+        "golesVisitante": 1,
+        "avanza": "United States"
+      },
+      "16vos-8": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Belgium"
+      },
+      "16vos-9": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Brazil"
+      },
+      "16vos-10": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "Norway"
+      },
+      "16vos-11": {
+        "golesLocal": 1,
+        "golesVisitante": 0,
+        "avanza": "Mexico"
+      },
+      "16vos-12": {
+        "golesLocal": 1,
+        "golesVisitante": 0,
+        "avanza": "England"
+      },
+      "16vos-13": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Argentina"
+      },
+      "16vos-14": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "Egypt"
+      },
+      "16vos-15": {
+        "golesLocal": 1,
+        "golesVisitante": 0,
+        "avanza": "Switzerland"
+      },
+      "16vos-16": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Colombia"
       }
     }
   }

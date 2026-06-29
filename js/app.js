@@ -61,6 +61,42 @@ function scoreMatch(pred, real) {
   return { pts: 0, tipo: "fallo" };
 }
 
+/* ---------- Puntaje fase de eliminación ---------- */
+const KO_PTS = {
+  "16vos":      { exacto: 6,  inexacto: 3, bonus: 1 },
+  "octavos":    { exacto: 6,  inexacto: 3, bonus: 1 },
+  "cuartos":    { exacto: 8,  inexacto: 5, bonus: 1 },
+  "semis":      { exacto: 8,  inexacto: 5, bonus: 1 },
+  "3er puesto": { exacto: 10, inexacto: 6, bonus: 2 },
+  "final":      { exacto: 10, inexacto: 6, bonus: 2 },
+};
+
+function scoreKnockout(pred, real) {
+  if (!hasPred(pred) || !hasResult(real)) return null;
+  const tab = KO_PTS[real.ronda];
+  if (!tab) return null;
+  const empReal = real.golesLocal === real.golesVisitante;
+  const empPred = pred.golesLocal === pred.golesVisitante;
+  const exacto = pred.golesLocal === real.golesLocal && pred.golesVisitante === real.golesVisitante;
+  // marcador (a los 90'): exacto / tipo correcto inexacto / 0
+  let marc = 0;
+  if (exacto) marc = tab.exacto;
+  else if ((empReal && empPred) ||
+           (!empReal && !empPred && sign(pred.golesLocal, pred.golesVisitante) === sign(real.golesLocal, real.golesVisitante)))
+    marc = tab.inexacto;
+  // bonus "avanza": solo si hay empate en la apuesta o en el resultado
+  let bonus = 0;
+  if ((empPred || empReal) && pred.avanza && real.avanza && pred.avanza === real.avanza) bonus = tab.bonus;
+  const pts = marc + bonus;
+  const tipo = exacto ? "exacto" : (pts > 0 ? "acierto" : "fallo");
+  return { pts, tipo };
+}
+
+/* Despacha al puntaje que corresponde según la fase del partido */
+function scorePartido(pred, real) {
+  return real.fase === "eliminacion" ? scoreKnockout(pred, real) : scoreMatch(pred, real);
+}
+
 /* ---------- Tabla de posiciones ---------- */
 function computeStandings(DATA) {
   const { participantes, pronosticos, resultados } = DATA;
@@ -69,7 +105,7 @@ function computeStandings(DATA) {
     let pts = 0, exactos = 0, aciertos = 0, pj = 0;
     for (const match of resultados.partidos) {
       if (!hasResult(match)) continue;
-      const r = scoreMatch(picks[match.id], match);
+      const r = scorePartido(picks[match.id], match);
       if (!r) continue;
       pj++; pts += r.pts;
       if (r.tipo === "exacto") exactos++;
@@ -173,7 +209,7 @@ function renderCards(DATA) {
 /* ---------- Render: próximos partidos ---------- */
 function renderFixtures(DATA) {
   const prox = DATA.resultados.partidos
-    .filter((p) => !hasResult(p))
+    .filter((p) => p.grupo && !hasResult(p))
     .sort((a, b) => parseFecha(a.fecha) - parseFecha(b.fecha))
     .slice(0, 8);
   const cont = $("#fixtures");
@@ -216,7 +252,7 @@ function renderChart(DATA) {
   fechas.forEach((f) => {
     jugados.filter((m) => m.fecha === f).forEach((m) => {
       participantes.participantes.forEach((p) => {
-        const r = scoreMatch((pronosticos.participantes[p.id] || {})[m.id], m);
+        const r = scorePartido((pronosticos.participantes[p.id] || {})[m.id], m);
         if (r) acumulado[p.id] += r.pts;
       });
     });
@@ -369,6 +405,7 @@ const flagBig = (team) => {
 function computeGrupos(DATA) {
   const grupos = {};
   for (const m of DATA.resultados.partidos) {
+    if (!m.grupo) continue; // ignora partidos de eliminación (no tienen grupo)
     const g = m.grupo;
     if (!grupos[g]) grupos[g] = {};
     for (const t of [m.local, m.visitante]) {
@@ -439,7 +476,7 @@ function renderSiguiente(DATA) {
   const prox = [...DATA.resultados.partidos]
     .filter((m) => !hasResult(m))
     .sort((a, b) => fechaHora(a) - fechaHora(b))[0];
-  if (!prox) { cont.innerHTML = `<p class="chart__empty">No quedan partidos por jugar en fase de grupos.</p>`; return; }
+  if (!prox) { cont.innerHTML = `<p class="chart__empty">No quedan partidos por jugar.</p>`; return; }
 
   const picks = DATA.participantes.participantes.map((p) => {
     const pr = (DATA.pronosticos.participantes[p.id] || {})[prox.id];
@@ -452,9 +489,10 @@ function renderSiguiente(DATA) {
       </div>`;
   }).join("");
 
+  const etiqueta = prox.grupo ? `Grupo ${prox.grupo}` : (prox.llave || "Eliminación");
   cont.innerHTML = `
     <div class="next__match">
-      <span class="next__grp">Grupo ${prox.grupo}</span>
+      <span class="next__grp">${etiqueta}</span>
       <div class="next__teams">${flagBig(prox.local)}<span>${prox.local}</span><span class="next__vs">VS</span><span>${prox.visitante}</span>${flagBig(prox.visitante)}</div>
       <span class="next__date">${prox.fecha} · ${prox.hora || ""}</span>
     </div>
@@ -473,7 +511,7 @@ function renderAnterior(DATA) {
     const pr = (DATA.pronosticos.participantes[p.id] || {})[ant.id];
     const sc = pr && pr.golesLocal != null
       ? `${pr.golesLocal} <em>-</em> ${pr.golesVisitante}` : "—";
-    const res = scoreMatch(pr, ant);
+    const res = scorePartido(pr, ant);
     const pts = res ? res.pts : 0;
     const tipo = res ? res.tipo : "fallo";
     return `<div class="next__pick">
@@ -484,9 +522,10 @@ function renderAnterior(DATA) {
       </div>`;
   }).join("");
 
+  const etiqueta = ant.grupo ? `Grupo ${ant.grupo}` : (ant.llave || "Eliminación");
   cont.innerHTML = `
     <div class="next__match next__match--done">
-      <span class="next__grp">Grupo ${ant.grupo} · Finalizado</span>
+      <span class="next__grp">${etiqueta} · Finalizado</span>
       <div class="next__teams">${flagBig(ant.local)}<span>${ant.local}</span><span class="prev__result">${ant.golesLocal} <em>-</em> ${ant.golesVisitante}</span><span>${ant.visitante}</span>${flagBig(ant.visitante)}</div>
       <span class="next__date">${ant.fecha} · ${ant.hora || ""}</span>
     </div>
@@ -510,6 +549,83 @@ async function renderLastUpdate(DATA) {
 }
 
 /* ---------- Init ---------- */
+/* ---------- Bracket / Fase de eliminación ---------- */
+const BR_TABS = [
+  { key: "16vos",   label: "16vos",   rondas: ["16vos"] },
+  { key: "octavos", label: "8vos",    rondas: ["octavos"] },
+  { key: "cuartos", label: "4tos",    rondas: ["cuartos"] },
+  { key: "semis",   label: "SF",      rondas: ["semis"] },
+  { key: "final",   label: "FN",      rondas: ["3er puesto", "final"] },
+];
+const ROUND_SIZE = { "16vos": 16, octavos: 8, cuartos: 4, semis: 2, "3er puesto": 1, final: 1 };
+
+function brColorClass(m) {
+  if (!m.alimenta) return "";
+  if (/FN/i.test(m.alimenta)) return "bx__key--final";
+  const mt = String(m.alimenta).match(/-(\d+)/);
+  return mt ? `bx__key--c${((+mt[1] - 1) % 8) + 1}` : "";
+}
+function bracketCard(m, isFinal) {
+  const side = (team, goles, win) => {
+    const flag = team ? flagImg(team) : `<span class="gflag gflag--none"></span>`;
+    const name = team ? team : "Por definir";
+    const score = (goles != null) ? `<span class="bx__score">${goles}</span>` : "";
+    return `<div class="bx__team ${win ? "bx__team--win" : ""} ${team ? "" : "bx__team--tbd"}">${flag}<span class="bx__name">${name}</span>${score}</div>`;
+  };
+  const winL = m.avanza && m.local && m.avanza === m.local;
+  const winV = m.avanza && m.visitante && m.avanza === m.visitante;
+  const fecha = (m.fecha || m.hora) ? `${m.fecha || ""}${m.hora ? " · " + m.hora : ""}` : "Por definir";
+  const tag = m.definicion
+    ? `<span class="bx__tag">${m.definicion === "penales" ? "av. penales" : "tras alargue"}</span>` : "";
+  const cc = brColorClass(m);
+  const key = m.llave
+    ? `<span class="bx__key ${cc}"><b>${m.llave}</b>${m.alimenta ? `<span class="bx__arrow">\u2192</span><span class="bx__dest">${m.alimenta}</span>` : ""}</span>`
+    : "";
+  return `<article class="bx ${isFinal ? "bx--final" : ""}">
+      <div class="bx__top">${key}<span class="bx__date">${fecha}</span>${tag}</div>
+      ${side(m.local, m.golesLocal, winL)}
+      ${side(m.visitante, m.golesVisitante, winV)}
+    </article>`;
+}
+
+function renderBracket(DATA) {
+  const tabsEl = $("#bracketTabs"), gridEl = $("#bracketGrid");
+  if (!tabsEl || !gridEl) return;
+  const ko = DATA.resultados.partidos.filter((p) => p.fase === "eliminacion");
+
+  let activo = "16vos";
+  const prox = ko.filter((m) => m.local && m.visitante && !hasResult(m))
+                 .sort((a, b) => fechaHora(a) - fechaHora(b))[0];
+  if (prox) {
+    const t = BR_TABS.find((tb) => tb.rondas.includes(prox.ronda));
+    if (t) activo = t.key;
+  }
+
+  const numLlave = (m) => { const x = String(m.llave || "").match(/-(\d+)/); return x ? +x[1] : 999; };
+  const getRonda = (ronda) => {
+    const arr = ko.filter((m) => m.ronda === ronda).sort((a, b) => numLlave(a) - numLlave(b));
+    return arr.length ? arr : Array.from({ length: ROUND_SIZE[ronda] }, () => ({ ronda }));
+  };
+
+  const pintar = () => {
+    tabsEl.innerHTML = BR_TABS.map((t) =>
+      `<button class="bracket__tab ${t.key === activo ? "is-active" : ""}" data-k="${t.key}">${t.label}</button>`).join("");
+    const tab = BR_TABS.find((t) => t.key === activo);
+    let cards;
+    if (tab.key === "final") {
+      const tercero = getRonda("3er puesto").map((m) => ({ ...m, llave: m.llave || "3er" }));
+      const finalM = getRonda("final").map((m) => ({ ...m, llave: m.llave || "FN" }));
+      cards = tercero.map((m) => bracketCard(m, false)).join("") + finalM.map((m) => bracketCard(m, true)).join("");
+    } else {
+      cards = tab.rondas.flatMap((r) => getRonda(r)).map((m) => bracketCard(m, false)).join("");
+    }
+    gridEl.innerHTML = cards;
+    tabsEl.querySelectorAll(".bracket__tab").forEach((b) =>
+      b.addEventListener("click", () => { activo = b.dataset.k; pintar(); }));
+  };
+  pintar();
+}
+
 async function init() {
   let DATA;
   try {
@@ -521,6 +637,7 @@ async function init() {
   const tabla = computeStandings(DATA);
   renderHero(tabla, DATA);
   renderStandings(tabla);
+  renderBracket(DATA);
   renderSiguiente(DATA);
   renderAnterior(DATA);
   renderCards(DATA);
