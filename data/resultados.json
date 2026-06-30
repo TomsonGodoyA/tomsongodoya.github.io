@@ -939,9 +939,9 @@
       "hora": "1:00 PM",
       "local": "Ivory Coast",
       "visitante": "Norway",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 1,
+      "golesVisitante": 2,
+      "avanza": "Norway",
       "definicion": null
     },
     {
