@@ -819,9 +819,9 @@
       "hora": "5:00 PM",
       "local": "France",
       "visitante": "Sweden",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 3,
+      "golesVisitante": 0,
+      "avanza": "France",
       "definicion": null
     },
     {
