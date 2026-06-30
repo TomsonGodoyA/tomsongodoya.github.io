@@ -849,10 +849,10 @@
       "hora": "9:00 PM",
       "local": "Netherlands",
       "visitante": "Morocco",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
-      "definicion": null
+      "golesLocal": 1,
+      "golesVisitante": 1,
+      "avanza": "Morocco",
+      "definicion": "penales"
     },
     {
       "id": "16vos-5",
