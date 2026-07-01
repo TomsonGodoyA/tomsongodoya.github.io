@@ -954,9 +954,9 @@
       "hora": "9:00 PM",
       "local": "Mexico",
       "visitante": "Ecuador",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 2,
+      "golesVisitante": 0,
+      "avanza": "Mexico",
       "definicion": null
     },
     {
