@@ -879,9 +879,9 @@
       "hora": "3:00 PM",
       "local": "Spain",
       "visitante": "Austria",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 3,
+      "golesVisitante": 0,
+      "avanza": "Spain",
       "definicion": null
     },
     {
