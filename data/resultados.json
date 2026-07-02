@@ -894,9 +894,9 @@
       "hora": "8:00 PM",
       "local": "United States",
       "visitante": "Bosnia and Herzegovina",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 2,
+      "golesVisitante": 0,
+      "avanza": "United States",
       "definicion": null
     },
     {
