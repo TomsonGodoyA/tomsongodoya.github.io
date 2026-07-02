@@ -909,10 +909,10 @@
       "hora": "4:00 PM",
       "local": "Belgium",
       "visitante": "Senegal",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
-      "definicion": null
+      "golesLocal": 2,
+      "golesVisitante": 2,
+      "avanza": "Belgium",
+      "definicion": "alargue"
     },
     {
       "id": "16vos-9",
