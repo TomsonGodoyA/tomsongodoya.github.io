@@ -1014,9 +1014,9 @@
       "hora": "11:00 PM",
       "local": "Switzerland",
       "visitante": "Algeria",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 2,
+      "golesVisitante": 0,
+      "avanza": "Switzerland",
       "definicion": null
     },
     {
