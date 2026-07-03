@@ -999,9 +999,9 @@
       "hora": "2:00 PM",
       "local": "Australia",
       "visitante": "Egypt",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 1,
+      "golesVisitante": 1,
+      "avanza": "Egypt",
       "definicion": null
     },
     {
