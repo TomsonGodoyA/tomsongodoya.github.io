@@ -1060,9 +1060,9 @@
       "hora": "1:00 PM",
       "local": "Canada",
       "visitante": "Morocco",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 0,
+      "golesVisitante": 3,
+      "avanza": "Morocco",
       "definicion": null,
       "sede": "Estadio Houston (Houston, EE.UU.)"
     },
