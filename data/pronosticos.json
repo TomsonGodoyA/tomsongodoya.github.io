@@ -368,6 +368,46 @@
         "golesLocal": 1,
         "golesVisitante": 1,
         "avanza": "Ghana"
+      },
+      "8vos-1": {
+        "golesLocal": 0,
+        "golesVisitante": 2,
+        "avanza": "France"
+      },
+      "8vos-2": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "Morocco"
+      },
+      "8vos-3": {
+        "golesLocal": 2,
+        "golesVisitante": 2,
+        "avanza": "Spain"
+      },
+      "8vos-4": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Belgium"
+      },
+      "8vos-5": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Brazil"
+      },
+      "8vos-6": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "England"
+      },
+      "8vos-7": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Argentina"
+      },
+      "8vos-8": {
+        "golesLocal": 0,
+        "golesVisitante": 2,
+        "avanza": "Colombia"
       }
     },
     "Pelao": {
@@ -736,6 +776,46 @@
       },
       "16vos-16": {
         "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Colombia"
+      },
+      "8vos-1": {
+        "golesLocal": 0,
+        "golesVisitante": 2,
+        "avanza": "France"
+      },
+      "8vos-2": {
+        "golesLocal": 0,
+        "golesVisitante": 2,
+        "avanza": "Morocco"
+      },
+      "8vos-3": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Spain"
+      },
+      "8vos-4": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "United States"
+      },
+      "8vos-5": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Brazil"
+      },
+      "8vos-6": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Mexico"
+      },
+      "8vos-7": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Argentina"
+      },
+      "8vos-8": {
+        "golesLocal": 0,
         "golesVisitante": 1,
         "avanza": "Colombia"
       }
@@ -1108,6 +1188,46 @@
         "golesLocal": 1,
         "golesVisitante": 2,
         "avanza": "Ghana"
+      },
+      "8vos-1": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "France"
+      },
+      "8vos-2": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Morocco"
+      },
+      "8vos-3": {
+        "golesLocal": 2,
+        "golesVisitante": 2,
+        "avanza": "Spain"
+      },
+      "8vos-4": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "United States"
+      },
+      "8vos-5": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Brazil"
+      },
+      "8vos-6": {
+        "golesLocal": 1,
+        "golesVisitante": 3,
+        "avanza": "England"
+      },
+      "8vos-7": {
+        "golesLocal": 1,
+        "golesVisitante": 0,
+        "avanza": "Argentina"
+      },
+      "8vos-8": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "Colombia"
       }
     },
     "Pipe": {
@@ -1476,6 +1596,46 @@
       },
       "16vos-16": {
         "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Colombia"
+      },
+      "8vos-1": {
+        "golesLocal": 0,
+        "golesVisitante": 2,
+        "avanza": "France"
+      },
+      "8vos-2": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "Morocco"
+      },
+      "8vos-3": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Portugal"
+      },
+      "8vos-4": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "United States"
+      },
+      "8vos-5": {
+        "golesLocal": 3,
+        "golesVisitante": 2,
+        "avanza": "Brazil"
+      },
+      "8vos-6": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "England"
+      },
+      "8vos-7": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Argentina"
+      },
+      "8vos-8": {
+        "golesLocal": 0,
         "golesVisitante": 1,
         "avanza": "Colombia"
       }
@@ -1847,6 +2007,46 @@
       "16vos-16": {
         "golesLocal": 2,
         "golesVisitante": 0,
+        "avanza": "Colombia"
+      },
+      "8vos-1": {
+        "golesLocal": 1,
+        "golesVisitante": 3,
+        "avanza": "France"
+      },
+      "8vos-2": {
+        "golesLocal": 0,
+        "golesVisitante": 2,
+        "avanza": "Morocco"
+      },
+      "8vos-3": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "Spain"
+      },
+      "8vos-4": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "United States"
+      },
+      "8vos-5": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Brazil"
+      },
+      "8vos-6": {
+        "golesLocal": 2,
+        "golesVisitante": 2,
+        "avanza": "Mexico"
+      },
+      "8vos-7": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Argentina"
+      },
+      "8vos-8": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
         "avanza": "Colombia"
       }
     }
