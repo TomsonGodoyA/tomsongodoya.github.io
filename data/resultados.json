@@ -1108,9 +1108,9 @@
       "hora": "4:00 PM",
       "local": "Brazil",
       "visitante": "Norway",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 1,
+      "golesVisitante": 2,
+      "avanza": "Norway",
       "definicion": null,
       "sede": "Estadio Nueva York Nueva Jersey (Nueva Jersey, EE.UU.)"
     },
