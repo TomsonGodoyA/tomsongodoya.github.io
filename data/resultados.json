@@ -1044,9 +1044,9 @@
       "hora": "5:00 PM",
       "local": "Paraguay",
       "visitante": "France",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 0,
+      "golesVisitante": 1,
+      "avanza": "France",
       "definicion": null,
       "sede": "Estadio Filadelfia (Filadelfia, EE.UU.)"
     },
