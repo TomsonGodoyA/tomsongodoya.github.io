@@ -1076,9 +1076,9 @@
       "hora": "3:00 PM",
       "local": "Portugal",
       "visitante": "Spain",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 0,
+      "golesVisitante": 1,
+      "avanza": "Spain",
       "definicion": null,
       "sede": "Estadio Dallas (Arlington, EE.UU.)"
     },
