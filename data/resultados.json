@@ -1124,9 +1124,9 @@
       "hora": "8:00 PM",
       "local": "Mexico",
       "visitante": "England",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 2,
+      "golesVisitante": 3,
+      "avanza": "England",
       "definicion": null,
       "sede": "Estadio Ciudad de México (CDMX, México)"
     },
