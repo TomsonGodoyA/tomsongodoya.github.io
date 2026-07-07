@@ -1092,9 +1092,9 @@
       "hora": "8:00 PM",
       "local": "United States",
       "visitante": "Belgium",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 1,
+      "golesVisitante": 4,
+      "avanza": "Belgium",
       "definicion": null,
       "sede": "Estadio Seattle (Seattle, EE.UU.)"
     },
