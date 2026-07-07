@@ -1140,9 +1140,9 @@
       "hora": "4:00 PM",
       "local": "Argentina",
       "visitante": "Egypt",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 3,
+      "golesVisitante": 2,
+      "avanza": "Argentina",
       "definicion": null,
       "sede": "Estadio Atlanta (Atlanta, EE.UU.)"
     },
