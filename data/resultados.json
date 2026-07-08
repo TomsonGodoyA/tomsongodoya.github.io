@@ -1156,9 +1156,9 @@
       "hora": "4:00 PM",
       "local": "Switzerland",
       "visitante": "Colombia",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 0,
+      "golesVisitante": 0,
+      "avanza": "Switzerland",
       "definicion": null,
       "sede": "Estadio BC Place (Vancouver, Canadá)"
     }
