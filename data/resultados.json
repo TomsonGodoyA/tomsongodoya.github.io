@@ -1173,9 +1173,9 @@
       "sede": "Gillette Stadium (Boston, EE.UU.)",
       "local": "France",
       "visitante": "Morocco",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 2,
+      "golesVisitante": 0,
+      "avanza": "France",
       "definicion": null
     },
     {
