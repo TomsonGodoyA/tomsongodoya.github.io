@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-03",
+  "actualizado": "2026-07-08",
   "fase": "grupos",
   "partidos": [
     {
@@ -1161,6 +1161,70 @@
       "avanza": "Switzerland",
       "definicion": null,
       "sede": "Estadio BC Place (Vancouver, Canadá)"
+    },
+    {
+      "id": "4tos-1",
+      "fase": "eliminacion",
+      "ronda": "cuartos",
+      "llave": "4tos-1",
+      "alimenta": "semis-1",
+      "fecha": "Thu, Jul 9",
+      "hora": "4:00 PM",
+      "sede": "Gillette Stadium (Boston, EE.UU.)",
+      "local": "France",
+      "visitante": "Morocco",
+      "golesLocal": null,
+      "golesVisitante": null,
+      "avanza": null,
+      "definicion": null
+    },
+    {
+      "id": "4tos-2",
+      "fase": "eliminacion",
+      "ronda": "cuartos",
+      "llave": "4tos-2",
+      "alimenta": "semis-1",
+      "fecha": "Fri, Jul 10",
+      "hora": "3:00 PM",
+      "sede": "SoFi Stadium (Los Ángeles, EE.UU.)",
+      "local": "Spain",
+      "visitante": "Belgium",
+      "golesLocal": null,
+      "golesVisitante": null,
+      "avanza": null,
+      "definicion": null
+    },
+    {
+      "id": "4tos-3",
+      "fase": "eliminacion",
+      "ronda": "cuartos",
+      "llave": "4tos-3",
+      "alimenta": "semis-2",
+      "fecha": "Sat, Jul 11",
+      "hora": "5:00 PM",
+      "sede": "Hard Rock Stadium (Miami, EE.UU.)",
+      "local": "Norway",
+      "visitante": "England",
+      "golesLocal": null,
+      "golesVisitante": null,
+      "avanza": null,
+      "definicion": null
+    },
+    {
+      "id": "4tos-4",
+      "fase": "eliminacion",
+      "ronda": "cuartos",
+      "llave": "4tos-4",
+      "alimenta": "semis-2",
+      "fecha": "Sat, Jul 11",
+      "hora": "9:00 PM",
+      "sede": "Arrowhead Stadium (Kansas City, EE.UU.)",
+      "local": "Argentina",
+      "visitante": "Switzerland",
+      "golesLocal": null,
+      "golesVisitante": null,
+      "avanza": null,
+      "definicion": null
     }
   ]
 }

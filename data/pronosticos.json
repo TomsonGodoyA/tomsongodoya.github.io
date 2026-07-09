@@ -408,6 +408,26 @@
         "golesLocal": 0,
         "golesVisitante": 2,
         "avanza": "Colombia"
+      },
+      "4tos-1": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "France"
+      },
+      "4tos-2": {
+        "golesLocal": 1,
+        "golesVisitante": 0,
+        "avanza": "Spain"
+      },
+      "4tos-3": {
+        "golesLocal": 2,
+        "golesVisitante": 2,
+        "avanza": "Norway"
+      },
+      "4tos-4": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Argentina"
       }
     },
     "Pelao": {
@@ -818,6 +838,26 @@
         "golesLocal": 0,
         "golesVisitante": 1,
         "avanza": "Colombia"
+      },
+      "4tos-1": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "Morocco"
+      },
+      "4tos-2": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Spain"
+      },
+      "4tos-3": {
+        "golesLocal": 2,
+        "golesVisitante": 2,
+        "avanza": "England"
+      },
+      "4tos-4": {
+        "golesLocal": 2,
+        "golesVisitante": 0,
+        "avanza": "Argentina"
       }
     },
     "Perrouri": {
@@ -1228,6 +1268,26 @@
         "golesLocal": 1,
         "golesVisitante": 2,
         "avanza": "Colombia"
+      },
+      "4tos-1": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "France"
+      },
+      "4tos-2": {
+        "golesLocal": 0,
+        "golesVisitante": 2,
+        "avanza": "Belgium"
+      },
+      "4tos-3": {
+        "golesLocal": 3,
+        "golesVisitante": 1,
+        "avanza": "Norway"
+      },
+      "4tos-4": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Argentina"
       }
     },
     "Pipe": {
@@ -1638,6 +1698,26 @@
         "golesLocal": 0,
         "golesVisitante": 1,
         "avanza": "Colombia"
+      },
+      "4tos-1": {
+        "golesLocal": 1,
+        "golesVisitante": 0,
+        "avanza": "France"
+      },
+      "4tos-2": {
+        "golesLocal": 1,
+        "golesVisitante": 0,
+        "avanza": "Spain"
+      },
+      "4tos-3": {
+        "golesLocal": 2,
+        "golesVisitante": 2,
+        "avanza": "England"
+      },
+      "4tos-4": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "Argentina"
       }
     },
     "Tomson": {
@@ -2048,6 +2128,26 @@
         "golesLocal": 1,
         "golesVisitante": 2,
         "avanza": "Colombia"
+      },
+      "4tos-1": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "France"
+      },
+      "4tos-2": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Spain"
+      },
+      "4tos-3": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
+        "avanza": "England"
+      },
+      "4tos-4": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Argentina"
       }
     }
   }
