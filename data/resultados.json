@@ -1189,9 +1189,9 @@
       "sede": "SoFi Stadium (Los Ángeles, EE.UU.)",
       "local": "Spain",
       "visitante": "Belgium",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 2,
+      "golesVisitante": 1,
+      "avanza": "Spain",
       "definicion": null
     },
     {
