@@ -1205,9 +1205,9 @@
       "sede": "Hard Rock Stadium (Miami, EE.UU.)",
       "local": "Norway",
       "visitante": "England",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 1,
+      "golesVisitante": 1,
+      "avanza": "England",
       "definicion": null
     },
     {
