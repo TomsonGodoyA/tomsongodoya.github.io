@@ -1221,9 +1221,9 @@
       "sede": "Arrowhead Stadium (Kansas City, EE.UU.)",
       "local": "Argentina",
       "visitante": "Switzerland",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 1,
+      "golesVisitante": 1,
+      "avanza": "Argentina",
       "definicion": null
     }
   ]
