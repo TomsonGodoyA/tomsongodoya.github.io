@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-08",
+  "actualizado": "2026-07-12",
   "fase": "grupos",
   "partidos": [
     {
@@ -1224,6 +1224,38 @@
       "golesLocal": 1,
       "golesVisitante": 1,
       "avanza": "Argentina",
+      "definicion": null
+    },
+    {
+      "id": "semis-1",
+      "fase": "eliminacion",
+      "ronda": "semis",
+      "llave": "semis-1",
+      "alimenta": "FN",
+      "fecha": "Tue, Jul 14",
+      "hora": "3:00 PM",
+      "sede": "Dallas Stadium (Arlington, EE.UU.)",
+      "local": "France",
+      "visitante": "Spain",
+      "golesLocal": null,
+      "golesVisitante": null,
+      "avanza": null,
+      "definicion": null
+    },
+    {
+      "id": "semis-2",
+      "fase": "eliminacion",
+      "ronda": "semis",
+      "llave": "semis-2",
+      "alimenta": "FN",
+      "fecha": "Wed, Jul 15",
+      "hora": "3:00 PM",
+      "sede": "Atlanta Stadium (Atlanta, EE.UU.)",
+      "local": "England",
+      "visitante": "Argentina",
+      "golesLocal": null,
+      "golesVisitante": null,
+      "avanza": null,
       "definicion": null
     }
   ]
