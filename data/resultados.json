@@ -1237,9 +1237,9 @@
       "sede": "Dallas Stadium (Arlington, EE.UU.)",
       "local": "France",
       "visitante": "Spain",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 0,
+      "golesVisitante": 2,
+      "avanza": "Spain",
       "definicion": null
     },
     {
