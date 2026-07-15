@@ -1253,9 +1253,9 @@
       "sede": "Atlanta Stadium (Atlanta, EE.UU.)",
       "local": "England",
       "visitante": "Argentina",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 1,
+      "golesVisitante": 2,
+      "avanza": "Argentina",
       "definicion": null
     }
   ]
