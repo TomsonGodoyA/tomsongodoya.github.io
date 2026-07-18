@@ -438,6 +438,16 @@
         "golesLocal": 2,
         "golesVisitante": 2,
         "avanza": "England"
+      },
+      "3er": {
+        "golesLocal": 3,
+        "golesVisitante": 1,
+        "avanza": "France"
+      },
+      "FN": {
+        "golesLocal": 1,
+        "golesVisitante": 0,
+        "avanza": "Spain"
       }
     },
     "Pelao": {
@@ -877,6 +887,16 @@
       "semis-2": {
         "golesLocal": 1,
         "golesVisitante": 1,
+        "avanza": "Argentina"
+      },
+      "3er": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "France"
+      },
+      "FN": {
+        "golesLocal": 1,
+        "golesVisitante": 3,
         "avanza": "Argentina"
       }
     },
@@ -1318,6 +1338,16 @@
         "golesLocal": 3,
         "golesVisitante": 2,
         "avanza": "England"
+      },
+      "3er": {
+        "golesLocal": 2,
+        "golesVisitante": 1,
+        "avanza": "France"
+      },
+      "FN": {
+        "golesLocal": 2,
+        "golesVisitante": 2,
+        "avanza": "Spain"
       }
     },
     "Pipe": {
@@ -1758,6 +1788,16 @@
         "golesLocal": 0,
         "golesVisitante": 0,
         "avanza": "Argentina"
+      },
+      "3er": {
+        "golesLocal": 0,
+        "golesVisitante": 1,
+        "avanza": "England"
+      },
+      "FN": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "Argentina"
       }
     },
     "Tomson": {
@@ -2197,6 +2237,16 @@
       "semis-2": {
         "golesLocal": 1,
         "golesVisitante": 1,
+        "avanza": "Argentina"
+      },
+      "3er": {
+        "golesLocal": 1,
+        "golesVisitante": 1,
+        "avanza": "England"
+      },
+      "FN": {
+        "golesLocal": 1,
+        "golesVisitante": 2,
         "avanza": "Argentina"
       }
     }

@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-12",
+  "actualizado": "2026-07-16",
   "fase": "grupos",
   "partidos": [
     {
@@ -1256,6 +1256,38 @@
       "golesLocal": 1,
       "golesVisitante": 2,
       "avanza": "Argentina",
+      "definicion": null
+    },
+    {
+      "id": "3er",
+      "fase": "eliminacion",
+      "ronda": "3er puesto",
+      "llave": "3er",
+      "alimenta": null,
+      "fecha": "Sat, Jul 18",
+      "hora": "5:00 PM",
+      "sede": "Hard Rock Stadium (Miami, EE.UU.)",
+      "local": "France",
+      "visitante": "England",
+      "golesLocal": null,
+      "golesVisitante": null,
+      "avanza": null,
+      "definicion": null
+    },
+    {
+      "id": "FN",
+      "fase": "eliminacion",
+      "ronda": "final",
+      "llave": "FN",
+      "alimenta": null,
+      "fecha": "Sun, Jul 19",
+      "hora": "3:00 PM",
+      "sede": "MetLife Stadium (Nueva Jersey, EE.UU.)",
+      "local": "Spain",
+      "visitante": "Argentina",
+      "golesLocal": null,
+      "golesVisitante": null,
+      "avanza": null,
       "definicion": null
     }
   ]
