@@ -1285,9 +1285,9 @@
       "sede": "MetLife Stadium (Nueva Jersey, EE.UU.)",
       "local": "Spain",
       "visitante": "Argentina",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 0,
+      "golesVisitante": 0,
+      "avanza": "Spain",
       "definicion": null
     }
   ]
