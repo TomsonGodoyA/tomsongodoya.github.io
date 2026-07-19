@@ -1269,9 +1269,9 @@
       "sede": "Hard Rock Stadium (Miami, EE.UU.)",
       "local": "France",
       "visitante": "England",
-      "golesLocal": null,
-      "golesVisitante": null,
-      "avanza": null,
+      "golesLocal": 4,
+      "golesVisitante": 6,
+      "avanza": "England",
       "definicion": null
     },
     {
